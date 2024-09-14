@@ -1,0 +1,35 @@
+body{
+    background-image: url(Atlantic_near_Faroe_Islands.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+.button1{
+    color: black;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.button1:hover{
+    color: blue;
+}
+.title{
+    border: 20px;
+    border-color: blue;
+}
+.button2:hover{
+    background-color: blue;
+    color: azure;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+    margin-top: 20vh;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(71, 173, 252, 0.51);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
