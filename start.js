@@ -1,3 +1,3 @@
 function start() {
-    window.location.pathname="/home/page1.html"
+    window.location.pathname="/coolestprojectmalaysia.github.io/home/page1.html"
 }
