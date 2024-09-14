@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    overflow-x: hidden
+}
+
+.bck1 {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    max-height: 100vh;
+}
+
+div.fishbck {
+    display: flex;
+    background-image: url(picture/Oceans\ excess\ heat.jpg);
+    background-size: 100vw 150vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    flex-direction: column;
+    margin: 0;
+}
+
+div.fishbck2 {
+    display: flex;
+    background-image: url(picture/background\ sand2.png);
+    background-size: 100vw  70vh;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.fish {
+    width: 18vw;
+    height: auto;
+    position: relative;
+    margin-left: 100vw;
+    animation: fish_move 10s infinite ;
+}
+
+@keyframes fish_move {
+    0% {
+        margin-left: 80vw;
+    }
+    50% {
+        transform: scaleX(1);
+        margin-left: 0vw;
+    }
+    51% {
+        transform: scaleX(-1);
+    }
+    99% {
+        transform: scaleX(-1);
+        margin-left: 80vw;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
