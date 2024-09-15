@@ -1,7 +1,43 @@
-.YangtzeFinlessPorpoise{
-    height: 200px;
-    width: 250px;
-    border-radius: 8px;
-    border: 16px solid #bbb6b6;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-p{font-size: 30px;}
+
+.flexbox {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+}
+
+.outer {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: row;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.outer img {
+    width: 60vw;
+    height: 80vh;
+    object-fit: fill;
+    border-radius: 50px;
+}
+
+.inner {
+    margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .outer {
+        flex-direction: column;
+    }
+
+    .outer img {
+        width: 80vw;
+        height: 80vh;
+    }
+}
