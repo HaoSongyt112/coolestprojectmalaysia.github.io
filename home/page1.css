@@ -39,16 +39,28 @@ button {
 
 .desc1 {
     width: 70vw;
+    word-wrap: break-word;
+}
+
+.flexbox {
+    display: flex;
+    height: 100vh;
+    align-content: center;
 }
 
 .outer {
     background-color: rgba(0, 137, 249, 0.5);
     margin: auto;
-    margin-top: 0vh;
     width: 80vw;
     padding: 20px;
     color: black;
     border-radius: 50px;
     top: 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 600px) {
+    .desc1 {
+        width: 60vw;
+    }
 }
