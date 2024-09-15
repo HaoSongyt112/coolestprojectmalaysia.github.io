@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/coolestprojectmalaysia.github.io/logo.png">
+    <link rel="icon" type="image/png" href="/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sea</title>
     <link rel="stylesheet" href="sea.css">
@@ -10,6 +10,7 @@
 <body>
     <audio id="Seasounds" src="Seasounds.mp3" autoplay loop></audio>
     <audio id="UnderwaterSounds" src="Underwater.mp3" autoplay loop></audio>
+    <audio autoplay id="DaSeaa" src="DaSeaa.ogg" type="audio/ogg"></audio>
     <div onmouseenter="Seasounds()" class="seasounds">
         <h1 class="title">The Sea</h1>
         <img class="bck1" src="picture/blue-ocean-28668-2560x1600.jpg">
@@ -26,6 +27,10 @@
     </div>
 </body>
 <script>
+    window.onload; {
+        document.getElementById("DaSeaa").play();
+    }
+
     function Seasounds() {
         document.getElementById("UnderwaterSounds").pause();
         document.getElementById("Seasounds").play();
