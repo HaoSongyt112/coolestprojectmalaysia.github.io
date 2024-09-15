@@ -12,7 +12,8 @@
 <body>
     <div class="flexbox">
         <div class="outer">
-            <audio src="GXHomeRecording.m4a" type="audio/m4a" autoplay></audio>
+            <audio id="GXRecording" src="GXHomeRecording.m4a" autoplay noloop type="audio/m4a"></audio>
+            <audio id="FoodSource" src="Resources.mp3" type="audio/mp3"></audio>
             <header>
                 <nav>
                     <h1 class="header2">OCEAN CREATURES IS GETTING EXTINCTION!!!</h1>
@@ -21,7 +22,7 @@
             <nav>
             </nav>
             <article>
-            <h2 class="desc" style="text-align: center;">Healthy oceans and seas are essential to our existence.They cover 70% of our planet and we rely on them for the resources. Yet, we have managed to do tremendous damage to these <p id="detail">precious resources</p>. We must protect them by eliminating pollution and overfishing and immediately start to responsibly manage and protect all marine life around the world.</h2>
+            <h2 class="desc" style="text-align: center;">Healthy oceans and seas are essential to our existence.They cover 70% of our planet and we rely on them for the resources. Yet, we have managed to do tremendous damage to these <p id="detail" onclick="resources()">precious resources</p>. We must protect them by eliminating pollution and overfishing and immediately start to responsibly manage and protect all marine life around the world.</h2>
                     <div id="more">
                     <h3>THE OCEANS, SEAS AND MARINE RESOURCES</h3>
                     <ul class="desc1">
@@ -49,6 +50,17 @@
 
     function enableButton() {
         document.getElementById("button").disabled = false
+    }
+
+    function resources() {
+        document.getElementById("GXRecording").pause();
+        document.getElementById("FoodSource").play();
+        setTimeout(playSound, 161000);
+        document.getElementById("more").style.display = none;
+    }
+
+    function playSound() {
+        document.getElementById("GXRecording").play();
     }
 </script>
 </html>
