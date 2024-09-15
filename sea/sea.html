@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="sea.css">
 </head>
 <body>
-    <img class="bck1" src="picture/blue-ocean-28668-2560x1600.jpg">
+    <audio id="Seasounds" src="Seasounds.mp3" autoplay loop></audio>
+    <audio id="UnderwaterSounds" src="Underwater.mp3" autoplay loop></audio>
+    <div onmouseenter="Seasounds()" class="seasounds">
+        <h1 class="title">The Sea</h1>
+        <img class="bck1" src="picture/blue-ocean-28668-2560x1600.jpg">
+    </div>
     <div class="fishdiv">
-            <img class="fishbck" src="picture/Oceans excess heat.jpg">
+            <img onmouseenter="Underwater()" class="fishbck" src="picture/Oceans excess heat.jpg">
             <a href="/coolestprojectmalaysia.github.io/resource/Vaquita/Vaquita.html"><img class="fish" src="picture/640x427-vaquita.jpg" alt="Vaquita"id="Vaquita" style="cursor: pointer; animation-delay: 2s;"></a>
             <a href="/coolestprojectmalaysia.github.io/resource/BelugaWhale/BelugaWhale.html"><img class="fish" src="picture/Oceanogràfic_29102004-removebg-preview.png" alt="white_beluga"  id="white_beluga" style="cursor: pointer; animation-delay: 5s;"></a>
             <a href="/coolestprojectmalaysia.github.io/resource/YangtzeFinlessPorpoise/YangtzeFinlessPorpoise.html"><img class="fish" src="picture/fish-removebg-preview.png" alt="Yangtze"  id="Yangtze" style="cursor: pointer; animation-delay: 3s;"></a>
@@ -20,4 +25,15 @@
             <a href="/coolestprojectmalaysia.github.io/resource/Angelshark/Angelshark.html"><img class="fish" src="picture/Squatina_australis-removebg-preview.png" alt="squatina" style="cursor: pointer;"></a>
     </div>
 </body>
+<script>
+    function Seasounds() {
+        document.getElementById("UnderwaterSounds").pause();
+        document.getElementById("Seasounds").play();
+    }
+
+    function Underwater() {
+        document.getElementById("Seasounds").pause();
+        document.getElementById("UnderwaterSounds").play();
+    }
+</script>
 </html>
